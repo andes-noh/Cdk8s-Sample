@@ -1,4 +1,8 @@
 language: typescript
-app: node main.js
+#ts-node-dev
+#ts파일을 내부적으로 자바스크립트로 바꿔서 구동시키는 도구 dev는 데몬의 성질을 가지며 에러 발생시 다시 돌리는 기능
+#prefer ts exts는 자바 스크립트와 ts가 같이 있을때 ts를 찾는 커맨드
+#lib 밑에 index.ts 파일을 자동으로 찾아가기때문에 lib/라고 하면 알아서 함
+app: ts-node-dev --prefer-ts-exts lib/
 imports:
-  - k8s
+  - k8s@1.21.0
