@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "redvanworkshop.explorer-exclude-vscode-extension",
+    "vscode-icons-team.vscode-icons",
+    "editorconfig.editorconfig",
+    "redhat.vscode-yaml",
+    "ms-kubernetes-tools.vscode-kubernetes-tools",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "codeandstuff.package-json-upgrade"
+  ]
+}
