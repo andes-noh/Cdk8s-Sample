@@ -5,6 +5,7 @@ import * as charts from './charts'
 
 const NS = {
   sample: 'SAMPLE',
+  test: 'test',
 }
 
 //.env 파일 활용
@@ -15,10 +16,10 @@ const app = new App({
   // FILE_PER_APP
   // FILE_PER_RESOURCE
   // FOLDER_PER_CHART_FILE_PER_RESOURCE
-  yamlOutputType: YamlOutputType.FILE_PER_CHART,
+  yamlOutputType: YamlOutputType.FILE_PER_RESOURCE,
 })
 
 //test
-new charts.SampleChart(app, 'mosan-thermo', { namespace: NS.sample })
+new charts.TestChart(app, 'test', { namespace: NS.test })
 
 app.synth()
