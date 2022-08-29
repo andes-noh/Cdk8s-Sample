@@ -6,6 +6,7 @@ import * as charts from './charts'
 const NS = {
   sample: 'SAMPLE',
   test: 'test',
+  nestServer: 'nest-http',
 }
 
 //.env 파일 활용
@@ -21,5 +22,6 @@ const app = new App({
 
 //test
 new charts.TestChart(app, 'test', { namespace: NS.test })
+// new charts.NestServerChart(app, 'nest-http', { namespace: NS.nestServer })
 
 app.synth()
