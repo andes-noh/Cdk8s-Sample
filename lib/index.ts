@@ -7,6 +7,7 @@ const NS = {
   sample: 'SAMPLE',
   test: 'test',
   nestServer: 'nest-http',
+  nextWeb: 'next-web',
 }
 
 //.env 파일 활용
@@ -21,7 +22,8 @@ const app = new App({
 })
 
 //test
-new charts.TestChart(app, 'test', { namespace: NS.test })
+//new charts.TestChart(app, 'test', { namespace: NS.test })
 // new charts.NestServerChart(app, 'nest-http', { namespace: NS.nestServer })
+new charts.NextWeb(app, 'next-web', { namespace: NS.nextWeb })
 
 app.synth()
