@@ -27,6 +27,7 @@ export class NestServerChart extends Chart {
         name: this.id,
       },
       spec: {
+        revisionHistoryLimit: 0,
         selector: {
           matchLabels: this.labels,
         },
