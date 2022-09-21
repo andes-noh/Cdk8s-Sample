@@ -47,7 +47,7 @@ export class SpringServerChart extends Chart {
                 resources: {
                   limits: {
                     cpu: Quantity.fromString('1'),
-                    memory: Quantity.fromString('128M'),
+                    memory: Quantity.fromString('512M'),
                   },
                 },
               },
