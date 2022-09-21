@@ -24,6 +24,7 @@ const app = new App({
 //test
 //new charts.TestChart(app, 'test', { namespace: NS.test })
 // new charts.NestServerChart(app, 'nest-http', { namespace: NS.nestServer })
-new charts.NextWeb(app, 'next-web', { namespace: NS.nextWeb })
+// new charts.NextWeb(app, 'next-web', { namespace: NS.nextWeb })
+new charts.SpringServerChart(app, 'spring-server', { namespace: NS.nestServer })
 
 app.synth()
